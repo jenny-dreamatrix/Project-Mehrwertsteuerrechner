@@ -53,15 +53,19 @@ input {
   margin: 0 0 1rem 0;
 }
 
+span {
+  color: rgb(187, 54, 54);
+}
+
 section {
-  width: 45vw;
+  width: 50rem;
   margin: 0 auto;
 }
 
 div {
   width: 100%;
   background-color: var(--lighter-color);
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 0 0 1rem 0;
 }
 div:nth-of-type(1) {
@@ -70,6 +74,10 @@ div:nth-of-type(1) {
 div:nth-of-type(3),
 article div:nth-of-type(2) {
   border-radius: 0 0 10px 10px;
+}
+
+article div {
+  height: 8.7rem;
 }
 
 form,
@@ -118,4 +126,14 @@ input[type="submit"] {
   letter-spacing: 0.1rem;
   color: white;
   margin: 1rem 0 1rem 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--lighter-color);
+  color: var(--highlight-color);
+  font-size: 2.2rem;
+  letter-spacing: 0;
+  transform: scale(1.01);
 }

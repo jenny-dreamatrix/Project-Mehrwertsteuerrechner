@@ -5,6 +5,7 @@ const changeLabelInput = document.querySelector(".label-input");
 const changeLabelOutput = document.querySelector(".label-output")
 
 
+
 const changetext = () => {
     changeLabelInput.innerHTML = "Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro";
     changeLabelOutput.innerHTML = "Nettobetrag";

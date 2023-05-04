@@ -9,32 +9,36 @@
   </head>
   <body>
     <main>
-      <h1>Mehrwertsteuer-Rechner</h1>
       <section>
+        <h1>Mehrwertsteuer-Rechner</h1>
         <form onsubmit="berechnen(); return false">
           <div>
             <p>Was soll berechnet werden?</p>
-            <input
-              type="radio"
-              id="aufschlagen"
-              name="netto-brutto"
-              required
-              checked
-              oninput="resettext(); return false"
-            />
-            <label for="aufschlagen"
-              >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
-            >
-            <input
-              type="radio"
-              id="abziehen"
-              name="netto-brutto"
-              required
-              oninput="changetext(); return false"
-            />
-            <label for="abziehen"
-              >Mehrwertsteuer abziehen (Brutto zu Netto)</label
-            >
+            <figure>
+              <input
+                type="radio"
+                id="aufschlagen"
+                name="netto-brutto"
+                required
+                checked
+                oninput="resettext(); return false"
+              />
+              <label for="aufschlagen"
+                >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
+              >
+            </figure>
+            <figure>
+              <input
+                type="radio"
+                id="abziehen"
+                name="netto-brutto"
+                required
+                oninput="changetext(); return false"
+              />
+              <label for="abziehen"
+                >Mehrwertsteuer abziehen (Brutto zu Netto)</label
+              >
+            </figure>
           </div>
           <div>
             <p>Mehrwertsteuersatz</p>

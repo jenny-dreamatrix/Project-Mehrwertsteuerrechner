@@ -17,44 +17,57 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "RobotoCondensedRegular";
 }
 
 html {
   font-size: 62.5%;
 }
 
-main {
-  height: 120vh;
-  background-color: var(--bg-color);
-  padding: 3rem 0 0 0;
+h1,
+h2,
+h3 {
+  font-family: "RobotoCondensedBold";
 }
 
 h1 {
   font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
   color: var(--highlight-color);
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 1rem;
   margin: 0 0 2rem 0;
+  transition: 1s ease-in-out;
 }
 
 h2 {
   font-size: 2rem;
-  padding: 1rem 0 1rem 2rem;
+  padding: 0 0 1rem 2rem;
 }
 
 h3 {
-  font-family: "RobotoCondensedBold";
   font-size: 2rem;
 }
 
 p,
 label,
 input {
+  font-family: "RobotoCondensedRegular";
   font-size: 2rem;
   margin: 0 0 1rem 0;
 }
 
 span {
   color: rgb(187, 54, 54);
+}
+
+/* main styles */
+
+main {
+  height: 120vh;
+  background-color: var(--bg-color);
+  padding: 0.5rem 0 0 0;
 }
 
 section {
@@ -83,7 +96,7 @@ article div {
 form,
 article {
   background-color: white;
-  border: 3px solid var(--highlight-color);
+  border: 5px solid var(--highlight-color);
   padding: 0.8rem;
 }
 
